@@ -22,7 +22,7 @@ class BaiTapShoeShop extends Component {
     };
   }
 
-  sanPhamClick = (shoeItem) => {
+  clickSanPham = (shoeItem) => {
     this.setState({
       gioHang: shoeItem,
     });
@@ -32,7 +32,7 @@ class BaiTapShoeShop extends Component {
     return (
       <div className='container'>
         <h3 className='text-center mt-5'>Shoes shop</h3>
-        <DanhSachSanPham arrSP={shoesData} sanPham={this.sanPhamClick} />
+        <DanhSachSanPham arrSP={shoesData} sanPham={this.clickSanPham} />
         <ModalGioHang gioHang={this.state.gioHang} />
       </div>
     );
